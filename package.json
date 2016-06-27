@@ -1,0 +1,37 @@
+{
+  "name": "gulp-flake8",
+  "version": "0.0.1",
+  "description": "Gulp plugin for Flake8.",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec $(find ./test -name *.tests.js) && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "lint": "semistandard *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sophilabs/gilp.git"
+  },
+  "keywords": [
+    "flake8",
+    "gulp"
+  ],
+  "author": "Sophilabs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sophilabs/gilp/issues"
+  },
+  "homepage": "https://github.com/sophilabs/gilp#readme",
+  "dependencies": {
+    "gulp-util": "^3.0.7",
+    "through2": "^2.0.1"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3",
+    "semistandard": "^8.0.0"
+  }
+}
