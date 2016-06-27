@@ -6,6 +6,8 @@
 [![downloads][downloads-image]][downloads-url]
 [![js-semistandard-style][semi-image]][semi-url]
 [![license][license-image]][license-url]
+[![dependencies][dependencies-image]][dependencies-url]
+[![dev-dependencies][dev-dependencies-image]][dev-dependencies-url]
 
 Gulp task for flake8.
 
@@ -42,3 +44,7 @@ sophilabs are trademarks of sophilabs, inc.
 [coveralls-url]: https://coveralls.io/github/sophilabs/gulp-flake8?branch=master
 [license-image]: https://img.shields.io/github/license/sophilabs/gulp-flake8.svg?style=flat-square
 [license-url]: /LICENSE
+[dependencies-image]: https://david-dm.org/sophilabs/gulp-flake8.svg?style=flat-square
+[dependencies-url]: https://david-dm.org/sophilabs/gulp-flake8
+[dev-dependencies-image]: https://david-dm.org/sophilabs/gulp-flake8/dev-status.svg?style=flat-square
+[dev-dependencies-url]: https://david-dm.org/sophilabs/gulp-flake8#info=devDependencies
