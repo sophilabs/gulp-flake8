@@ -1,4 +1,5 @@
 'use strict';
+var util = require('util');
 var path = require('path');
 var gutil = require('gulp-util');
 var through = require('through2');
@@ -19,7 +20,9 @@ function gulpFlake8(opts) {
     } else {
       file.flake8 = {};
       var onData = function (data) {
-        file.flake8.errors = data.toString().trim().replace(/^stdin/g, file.path);
+        file.flake8.errors = data.toString().trim().replace(
+          /stdin:/g,
+          util.format('%s:', file.path));
       };
       var onExit = function (code) {
         cb(null, file);
@@ -45,13 +48,13 @@ gulpFlake8.failOnError = function() {
       cb(null, file);
       return;
     }
-    throw new gutil.PluginError(
+    cb(new gutil.PluginError(
       'gulp-flake8',
       {
         name: 'Flake8Error',
         message: file.flake8.errors
       }
-    );
+    ));
   });
 };
 
