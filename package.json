@@ -1,8 +1,8 @@
 {
   "name": "gulp-flake8",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Gulp plugin for Flake8.",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "directories": {
     "test": "test"
   },

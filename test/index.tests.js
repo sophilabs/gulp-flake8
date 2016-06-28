@@ -1,6 +1,6 @@
 'use strict';
 
-var gulpFlake8 = require('../src');
+var gulpFlake8 = require('../lib');
 var should = require('should');
 var File = require('vinyl');
 
