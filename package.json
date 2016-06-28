@@ -1,6 +1,6 @@
 {
   "name": "gulp-flake8",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Gulp plugin for Flake8.",
   "main": "lib/index.js",
   "directories": {
@@ -16,7 +16,7 @@
   },
   "keywords": [
     "flake8",
-    "gulp"
+    "gulpplugin"
   ],
   "author": "Sophilabs",
   "license": "MIT",
