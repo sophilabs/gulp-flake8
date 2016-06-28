@@ -17,6 +17,19 @@ Gulp task for flake8.
 npm install gulp-flake8
 ```
 
+## Usage
+
+```javascript
+var gulp = require('gulp');
+var gulpFlake8 = require('gulp-flake8');
+
+gulp.task('isort', function () {
+  return gulp.src('**/*')
+    .pipe(gulpFlake8())
+    .pipe(gulpFlake8.failOnError());
+});
+```
+
 ## License
 
 Gulp Flake8 is Copyright (c) 2016 sophilabs, inc. It is free software, and may be
